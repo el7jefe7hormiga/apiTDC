@@ -1,5 +1,5 @@
 {
-  "name": "mysql-nodejs-rest-api",
+  "name": "apiex",
   "version": "1.0.1",
   "description": "A simple REST API with Node.js, Express and MySQL",
   "main": "src/index.js",
@@ -11,18 +11,24 @@
     "pretest": "cross-env NODE_ENV=test jest --clearCache"
   },
   "keywords": [],
-  "author": "",
+  "author": "el_jefe_hormiga",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.2",
+    "dotenv": "^16.3.1",
     "express": "^4.18.1",
     "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "jest": "^29.0.3",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.20",
-    "supertest": "^6.2.4"
-  }
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/el7jefe7hormiga/apiEx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/el7jefe7hormiga/apiEx/issues"
+  },
+  "homepage": "https://github.com/el7jefe7hormiga/apiEx#readme"
 }

@@ -7,7 +7,7 @@ git clone https://github.com/fazt/nodejs-mysql-restapi
 cd nodejs-mysql-restapi
 docker-compose up
 npm install
-npm run dev
+npm run dev     <---- CORRER LA API 
 ```
 
 ### TODO
@@ -56,7 +56,7 @@ y en el package.json agregar "type": "module",
 p.e. 
 import express from 'express'
 const app = express()
-app.listen(300)
+app.listen(3000)
 * listo! ya esta el servidor en escucha en el puerto 3000
 
 - crear rutas (peticiones HTTP)
@@ -88,7 +88,7 @@ app.get('/empleados', (req, res)=> res.send('obteniendo empleados'))
     
 ...y ahora queda el router:
 import {controlador} from 'ruta donde estan los controladores'
-app.get('tdc', controlador)
+app.get('Abonado', controlador)
 
 
 Variables de entorno (env)
@@ -99,7 +99,25 @@ Se instala el modulo: dotenv
 Sirve para leer estos archivos, .env
 
 
+GIT
+
+echo "# apiAbonado" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/el7jefe7hormiga/apiAbonado.git
+git push -u origin main
+
+* Cuando hago algun cambio en algun archivo y quiero actualizar el GIT:
+git add .                        // agrego los archivos modificados
+git commit -m "actualizacion x"  // 'aviso' a GIT de la actualizacion
+git push origin master           // subo los archivo a la rama master
+
+
+
 RAILWAY ! deply la app, subirla a un servidor en la nube!
+
 
 
 

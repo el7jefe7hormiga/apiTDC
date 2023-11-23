@@ -3,3 +3,6 @@ db
 http
 .env
 coverage
+docker-compose.yml
+jest.config.jest
+tmp
